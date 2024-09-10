@@ -61,6 +61,12 @@
     <!-- template styles -->
     <link rel="stylesheet" href="static/chronic/assets/css/style.css">
     <link rel="stylesheet" href="static/chronic/assets/css/responsive.css">
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -79,7 +85,7 @@
                         <h4 class="text-uppercase bold text-white" style="color:white; font-weight:bold;"><spanv style="color:orange;">{{strtoupper(env('APP_NAME'))}}</spanv></h4>
                         <!-- <img src="/static/chronic/assets/images/logo-1-1.png" width="136" alt=""> -->
                     </a>
-                    <span class="side-menu__toggler" style="margin-left:250px;"><i class="fa fa-bars"></i></span><!-- /.side-menu__toggler -->
+                    <span class="side-menu__toggler" style="margin-left:200px;"><i class="fa fa-bars"></i></span><!-- /.side-menu__toggler -->
                 </div><!-- /.site-header-one__logo -->
                 <div class="main-nav__main-navigation one-page-scroll-menu">
                     <ul class="main-nav__navigation-box">
