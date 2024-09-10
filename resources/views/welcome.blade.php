@@ -33,7 +33,7 @@
     <meta property="og:image" content="static/styling/images/bg.html">
     <meta property="og:description" content="Buy Cheap Internet Data Plan and Airtime Recharge for Airtel, 9mobile, GLO, MTN, Pay DSTV, GOTV, PHCN.">
     <meta property="og:site_name" content="{{env('APP_NAME')}}">
-    <meta property="og:url" content="index.html">
+    <meta property="og:url" content="/">
     <meta property="og:type" content="website">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,7 +75,7 @@
         <header class="site-header-one stricky site-header-one__fixed-top">
             <div class="container-fluid">
                 <div class="site-header-one__logo">
-                    <a href="index.htm">
+                    <a href="/">
                         <h4 class="text-uppercase bold text-white" style="color:white; font-weight:bold;"><spanv style="color:orange;">{{strtoupper(env('APP_NAME'))}}</spanv></h4>
                         <!-- <img src="/static/chronic/assets/images/logo-1-1.png" width="136" alt=""> -->
                     </a>
@@ -119,8 +119,8 @@
                                 <p>{{env('APP_NAME')}} is a registered telecommunication company that provide voice or data transmission services, such as; Mobile Data, Cable Sub, Electric Bill, Airtime (VTU).
                                 </p>
                                 
-                                <a href="login/index.htm" class="thm-btn banner-one__btn" style="background:turquoise; margin-left:10px;"><span>Login</span></a>
-                                <a href="signup/index.htm" class="thm-btn banner-one__btn"><span>Register</span></a>
+                                <a href="/auth/sign-in" class="thm-btn banner-one__btn" style="background:turquoise; margin-left:10px;"><span>Login</span></a>
+                                <a href="/auth/sign-up" class="thm-btn banner-one__btn"><span>Register</span></a>
                                 
                                 <!-- /.thm-btn banner-one__btn -->
                             </div><!-- /.banner-one__content -->
@@ -1318,7 +1318,7 @@
             <div class="site-footer__bottom">
                 <div class="container">
                     <div class="inner-container">
-                        <p>© copyright 2022 by {{env('APP_NAME')}}.com <a href="#">DEVELOPED BY : </a> <a href="https://www.linkedin.com/in/dennis-chiemezie-onah-7b3a90280/">{{strtoupper('Don Codes.(Chiemezie Dennis)')}}</a></p>
+                        <p>© copyright 2022 by {{env('APP_NAME')}}<a href="#">DEVELOPED BY : </a> <a href="https://www.linkedin.com/in/dennis-chiemezie-onah-7b3a90280/">{{strtoupper('Don Codes.(Chiemezie Dennis)')}}</a></p>
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-square"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1343,7 +1343,7 @@
 
                 <a href="#" class="side-menu__toggler side-menu__close-btn">
                     <!-- <img src="/static/chronic/assets/images/shapes/close-1-1.png" alt=""> -->
-                    <h4 class="text-uppercase bold " style="color:black; font-weight:bold;">geodna<spanv style="color:orange;">techsub</spanv></h4>
+                    <h4 class="text-uppercase bold " style="color:black; font-weight:bold;"><spanv style="color:orange;">{{env('APP_NAME')}}</spanv></h4>
                        
                     </a>
             </div><!-- /.side-menu__top -->

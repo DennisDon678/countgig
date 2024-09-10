@@ -54,15 +54,15 @@
                                 <i class="fe fe-users"></i> Users Management
                             </a>
                         </li>
-                        @php
+                        {{-- @php
                             $count = count(App\Models\Preordered::all());
                         @endphp
                         <li class="nav-item">
                             <a class="nav-link" href="/admin/preorder/all">
                                 <i class="fe fe-book-open"></i> Available Preorders ({{ $count }})
                             </a>
-                        </li>
-                        @php
+                        </li> --}}
+                        {{-- @php
                             $count = count(App\Models\Airtime_to_cash::all());
                         @endphp
 
@@ -70,7 +70,7 @@
                             <a class="nav-link" href="/admin/airtime_to_cash">
                                 <i class="fe fe-book-open"></i> Airtime 2 Cash ({{ $count }})
                             </a>
-                        </li>
+                        </li> --}}
                         @php
                             $count = count(App\Models\Pending_manual_fund::all());
                         @endphp
@@ -164,21 +164,21 @@
                                 <i class="fe fe-award"></i> Vendors Config
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="/admin/config/preorder-vendor">
                                 <i class="fe fe-award"></i>PreOrder Vendors Config
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="/admin/config/funding">
                                 <i class="fe fe-briefcase"></i> Manual Funding Config
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="/admin/config/automatic">
                                 <i class="fe fe-briefcase"></i> Automatic Funding Config
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="/admin/config/contact">
                                 <i class="fe fe-message-square"></i> Contact Config

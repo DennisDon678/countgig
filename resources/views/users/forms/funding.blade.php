@@ -26,13 +26,14 @@
         <div class="container mt-4">
             <ul class="nav nav-tabs justify-content-center nav-adminux " id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#automated"
-                        type="button" role="tab" aria-controls="personal" aria-selected="true">Automated</button>
+                    <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#manual"
+                        type="button" role="tab" aria-controls="profile" aria-selected="true">Manual</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#manual"
-                        type="button" role="tab" aria-controls="profile" aria-selected="false">Manual</button>
+                    <button class="nav-link " id="personal-tab" data-bs-toggle="tab" data-bs-target="#automated"
+                        type="button" role="tab" aria-controls="personal" aria-selected="false">Automated</button>
                 </li>
+
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="payment-tab" data-bs-toggle="tab" data-bs-target="#card" type="button"
                         role="tab" aria-controls="payment" aria-selected="false">Card</button>
@@ -40,7 +41,7 @@
 
             </ul>
             <div class="tab-content py-3" id="myTabContent">
-                <div class="tab-pane fade show active" id="automated" role="tabpanel" aria-labelledby="personal-tab">
+                <div class="tab-pane fade " id="automated" role="tabpanel" aria-labelledby="personal-tab">
                     <div class="p-2 mb-2 ">
                         <div class="card">
 
@@ -69,12 +70,14 @@
                                                 <h6>Bank Name: <em class="text-muted">{{ $account->bank_name }}</em>
                                                 </h6>
                                             </div>
-                                            <small>Charges applies (&#8358;{{number_format(App\Models\Automatic_funding_config::first()->charge_amount,2)}})</small>
+                                            <small>Charges applies
+                                                (&#8358;{{ number_format(App\Models\Automatic_funding_config::first()->charge_amount, 2) }})</small>
                                         </div>
                                     @else
-                                        <div class="col-12">
+                                        {{-- <div class="col-12">
                                             <Button class="btn btn-primary" id="generateBank">Generate Account</Button>
-                                        </div>
+                                        </div> --}}
+                                        <p>Coming Soon</p>
                                     @endif
                                 </div>
                             </div>
@@ -91,7 +94,7 @@
                             <div class="col-12 col-lg-12 mb-2 p-2">
 
                                 <div class="modal-body">
-                                    <div class="alt">
+                                    {{-- <div class="alt">
                                         <div class="mb-2">
                                             <div class="form-group mb-3 position-relative check-valid">
                                                 <div class="input-group input-group-lg">
@@ -109,13 +112,14 @@
                                                 With
                                                 Card</button>
                                         </div>
-                                    </div>
+                                    </div> --}}
+                                    <P>Coming Soon</P>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="manual" role="tabpanel" aria-labelledby="personal-tab">
+                <div class="tab-pane fade show active" id="manual" role="tabpanel" aria-labelledby="personal-tab">
                     <div class="p-2 mb-2 ">
                         <div class="card">
 
