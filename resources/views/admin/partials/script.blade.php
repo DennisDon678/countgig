@@ -6,4 +6,3 @@
 
 <!-- Theme JS -->
 <script src="/admin/assets/js/theme.bundle.js"></script>
-@include('admin.charts.funding')

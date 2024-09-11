@@ -185,32 +185,7 @@
                 </div>
             </div> <!-- / .row -->
 
-            <div class="row">
-
-                <div class="col-12 col-xl-4-12">
-
-                    <!-- Sales -->
-                    <div class="card">
-                        <div class="card-header">
-
-                            <!-- Title -->
-                            <h4 class="card-header-title">
-                                Account Funding
-                            </h4>
-
-                        </div>
-                        <div class="card-body">
-
-                            <!-- Chart -->
-                            <div class="chart">
-                                <canvas id="salesChart" class="chart-canvas"></canvas>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div> <!-- / .row -->
+           
         </div>
 
     </div><!-- / .main-content -->
